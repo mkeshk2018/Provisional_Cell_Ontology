@@ -16,7 +16,7 @@
   rdf:type owl:Ontology ;
   owl:versionInfo "$Id: Provisional_Cell_Ontology.ttl, Ver 1.0, Nov 8, 2018, Mohamed Keshk. $" .
 
-
+  
 # ******************* MTG_Cluster_Annotation Concepts ******************* 
 
 :pCL1 
