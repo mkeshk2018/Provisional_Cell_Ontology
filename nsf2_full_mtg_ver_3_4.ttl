@@ -1,0 +1,1828 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+
+@prefix :       <http://www.jcvi.org/framework/nsf2_full_mtg#> .
+@prefix mtg_sc: <http://www.jcvi.org/framework/mtg_schema#> .
+@prefix obo_sc: <http://www.jcvi.org/framework/obo_schema#> .
+@prefix go_sc:  <http://www.jcvi.org/framework/go_schema#> .
+@prefix cl:     <http://purl.obolibrary.org/obo/cl#> .
+@prefix hugo:   <http://ncicb.nci.nih.gov/xml/owl/evs/hugo#> .
+@prefix uberon: <http://purl.obolibrary.org/obo/uberon#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+
+<http://www.jcvi.org/framework/nsf2_full_mtg>
+  rdf:type owl:Ontology ;
+  owl:versionInfo "$Id: nsf2_full_mtg_ver_3_4.ttl, Ver 1.0, Dec 4, 2018, Mohamed Keshk. $" .
+
+
+# ******************* NSF2_Full_MTG_Ver-3.3 Concepts ******************* 
+
+:pCL_0000001 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000001" ;
+  skos:broader :pCL_0000078 ;
+  mtg_sc:preferred_name "TGFBR2-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-2 PAX6 CDH12" ;
+  mtg_sc:tdc_id "Hodge1" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:cluster_size "90"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.80"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_11773 ;
+  obo_sc:expresses "LOC101927870" ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000002 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000002" ;
+  skos:broader :pCL_0000078 ;
+  mtg_sc:preferred_name "SP8-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-2 PAX6 TNFAIP8L3" ;
+  mtg_sc:tdc_id "Hodge2" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:cluster_size "16"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.83"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_19196 ;
+  obo_sc:expresses hugo:HGNC_51163 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000003 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000003" ;
+  skos:broader :pCL_0000078 ;
+  mtg_sc:preferred_name "NDNF-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1 LAMP5 NMBR" ;
+  mtg_sc:tdc_id "Hodge3" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:cluster_size "283"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.90"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_26256 ;
+  obo_sc:expresses hugo:HGNC_30670 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000004 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000004" ;
+  skos:broader :pCL_0000078 ;
+  mtg_sc:preferred_name "KIT-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-4 LAMP5 LCP2" ;
+  mtg_sc:tdc_id "Hodge4" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:cluster_size "356"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.82"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_6342 ;
+  obo_sc:expresses hugo:HGNC_27652 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000005 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000005" ;
+  skos:broader :pCL_0000078 ;
+  mtg_sc:preferred_name "CPLX3-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-2 LAMP5 DBP" ;
+  mtg_sc:tdc_id "Hodge5" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:cluster_size "21"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.34"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_27652 ;
+  obo_sc:expresses hugo:HGNC_16231 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000006 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000006" ;
+  skos:broader :pCL_0000078 ;
+  mtg_sc:preferred_name "EYA4-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L2-6 LAMP5 CA1" ;
+  mtg_sc:tdc_id "Hodge6" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "256"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.84"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_3522 ;
+  obo_sc:expresses hugo:HGNC_26086 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000007 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000007" ;
+  skos:broader :pCL_0000078 ;
+  mtg_sc:preferred_name "ANKFN1-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1 SST CHRNA4" ;
+  mtg_sc:tdc_id "Hodge7" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:cluster_size "52"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.67"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_26766 ;
+  obo_sc:expresses hugo:HGNC_10725 ;
+  obo_sc:expresses hugo:HGNC_10640 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000008 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000008" ;
+  skos:broader :pCL_0000078 ;
+  mtg_sc:preferred_name "ARHGAP36-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-2 ADARB2 MC4R" ;
+  mtg_sc:tdc_id "Hodge8" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:cluster_size "107"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.62"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_26388 ;
+  obo_sc:expresses hugo:HGNC_15478 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000009 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000009" ;
+  skos:broader :pCL_0000078 ;
+  mtg_sc:preferred_name "BAGE2-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-2 SST BAGE2" ;
+  mtg_sc:tdc_id "Hodge9" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:cluster_size "108"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.53"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_15723 ;
+  obo_sc:expresses "LOC105377436" ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000010 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000010" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "CNR1-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-3 VIP SYT6" ;
+  mtg_sc:tdc_id "Hodge10" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:cluster_size "29"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.82"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_2159 ;
+  obo_sc:expresses hugo:HGNC_31822 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000011 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000011" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "DCN-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-2 VIP TSPAN12" ;
+  mtg_sc:tdc_id "Hodge11" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:cluster_size "42"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.55"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_2705 ;
+  obo_sc:expresses hugo:HGNC_51307 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000012 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000012" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "CCDC141-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-4 VIP CHRNA6" ;
+  mtg_sc:tdc_id "Hodge12" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:cluster_size "25"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.56"^^xsd:double ;
+  obo_sc:expresses "LOC101928923" ;
+  obo_sc:expresses hugo:HGNC_26821 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000013 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000013" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "DACH2-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-3 VIP ADAMTSL1" ;
+  mtg_sc:tdc_id "Hodge13" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:cluster_size "72"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.73"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_16814 ;
+  obo_sc:expresses hugo:HGNC_14268 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000014 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000014" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "EGFEM1P-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-4 VIP PENK" ;
+  mtg_sc:tdc_id "Hodge14" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:cluster_size "17"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.61"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_25149 ;
+  obo_sc:expresses "LOC105371331" ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000015 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000015" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "PCP4|IGFBP7-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L2-6 VIP QPCT" ;
+  mtg_sc:tdc_id "Hodge15" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "37"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.75"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_8742 ;
+  obo_sc:expresses hugo:HGNC_5476 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000016 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000016" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "IQGAP2-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L3-6 VIP HS3ST3A1" ;
+  mtg_sc:tdc_id "Hodge16" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "80"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.57"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_6111 ;
+  obo_sc:expresses hugo:HGNC_17265 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000017 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000017" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "ANGPT1-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-2 VIP PCDH20" ;
+  mtg_sc:tdc_id "Hodge17" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:cluster_size "61"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.62"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_484 ;
+  obo_sc:expresses hugo:HGNC_12693 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000018 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000018" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "TAC3|TSHZ2-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L2-5 VIP SERPINF1" ;
+  mtg_sc:tdc_id "Hodge18" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "55"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.62"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_11521 ;
+  obo_sc:expresses hugo:HGNC_13010 ;
+  obo_sc:expresses hugo:HGNC_51425 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000019 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000019" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "TAC3|COL15A1-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L2-5 VIP TYR" ;
+  mtg_sc:tdc_id "Hodge19" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "62"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.57"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_11521 ;
+  obo_sc:expresses hugo:HGNC_2192 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000020 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000020" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "LOC100421401-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-3 VIP CHRM2" ;
+  mtg_sc:tdc_id "Hodge20" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:cluster_size "175"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.56"^^xsd:double ;
+  obo_sc:expresses "LOC100421401" ;
+  obo_sc:expresses "LOC101060145" ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000021 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000021" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "HTR2C-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L2-4 VIP CBLN1" ;
+  mtg_sc:tdc_id "Hodge21" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:cluster_size "67"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.68"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_5295 ;
+  obo_sc:expresses hugo:HGNC_7154 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000022 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000022" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "KCNH8-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-3 VIP CCDC184" ;
+  mtg_sc:tdc_id "Hodge22" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:cluster_size "64"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.48"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_18864 ;
+  obo_sc:expresses hugo:HGNC_21397 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000023 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000023" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "GGH-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-3 VIP GGH" ;
+  mtg_sc:tdc_id "Hodge23" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:cluster_size "68"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.53"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_4248 ;
+  obo_sc:expresses "LOC105375473" ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000024 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000024" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "C18orf42-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-2 VIP LBH" ;
+  mtg_sc:tdc_id "Hodge24" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:cluster_size "47"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.49"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_28285 ;
+  obo_sc:expresses "LOC105379146" ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000025 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000025" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "LRRC63-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L2-3 VIP CASC6" ;
+  mtg_sc:tdc_id "Hodge25" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:cluster_size "45"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.56"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_34296 ;
+  obo_sc:expresses hugo:HGNC_49076 ;
+  obo_sc:expresses "LOC105370456" ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000026 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000026" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "SLC7A11-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L2-4 VIP SPAG17" ;
+  mtg_sc:tdc_id "Hodge26" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:cluster_size "33"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.53"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_11059 ;
+  obo_sc:expresses hugo:HGNC_44915 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000027 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000027" ;
+  skos:broader :pCL_0000080 ;
+  mtg_sc:preferred_name "PCP4|LINC01583-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-4 VIP OPRM1" ;
+  mtg_sc:tdc_id "Hodge27" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:cluster_size "52"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.58"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_8742 ;
+  obo_sc:expresses hugo:HGNC_51425 ;
+  obo_sc:expresses hugo:HGNC_10967 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000028 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000028" ;
+  skos:broader :pCL_0000076 ;
+  mtg_sc:preferred_name "NPY-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L3-6 SST NPY" ;
+  mtg_sc:tdc_id "Hodge28" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "15"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "1"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.99"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_7955 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000029 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000029" ;
+  skos:broader :pCL_0000081 ;
+  mtg_sc:preferred_name "HPGD-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L3-6 SST HPGD" ;
+  mtg_sc:tdc_id "Hodge29" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "60"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.66"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_5154 ;
+  obo_sc:expresses hugo:HGNC_25057 ;
+  obo_sc:expresses hugo:HGNC_21063 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000030 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000030" ;
+  skos:broader :pCL_0000081 ;
+  mtg_sc:preferred_name "NMU-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L4-6 SST B3GAT2" ;
+  mtg_sc:tdc_id "Hodge30" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "182"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.61"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_7859 ;
+  obo_sc:expresses hugo:HGNC_23399 ;
+  obo_sc:expresses hugo:HGNC_11521 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000031 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000031" ;
+  skos:broader :pCL_0000081 ;
+  mtg_sc:preferred_name "LOC100996671-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L5-6 SST KLHDC8A" ;
+  mtg_sc:tdc_id "Hodge31" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "63"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.61"^^xsd:double ;
+  obo_sc:expresses "LOC100996671" ;
+  obo_sc:expresses "LOC105377701" ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000032 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000032" ;
+  skos:broader :pCL_0000081 ;
+  mtg_sc:preferred_name "SPON1-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L5-6 SST NPM1P10" ;
+  mtg_sc:tdc_id "Hodge32" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "79"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.78"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_11252 ;
+  obo_sc:expresses hugo:HGNC_3604 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000033 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000033" ;
+  skos:broader :pCL_0000081 ;
+  mtg_sc:preferred_name "QRFPR-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L4-6 SST GXYLT2" ;
+  mtg_sc:tdc_id "Hodge33" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "41"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.62"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_15565 ;
+  obo_sc:expresses hugo:HGNC_20151 ;
+  obo_sc:expresses "LOC101929667" ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000034 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000034" ;
+  skos:broader :pCL_0000081 ;
+  mtg_sc:preferred_name "SLC9A2-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L4-5 SST STK32A" ;
+  mtg_sc:tdc_id "Hodge34" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "93"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.55"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_11072 ;
+  obo_sc:expresses hugo:HGNC_28317 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000035 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000035" ;
+  skos:broader :pCL_0000081 ;
+  mtg_sc:preferred_name "LOC101929028-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-3 SST CALB1" ;
+  mtg_sc:tdc_id "Hodge35" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:cluster_size "279"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "1"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.64"^^xsd:double ;
+  obo_sc:expresses "LOC101929028" ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000036 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000036" ;
+  skos:broader :pCL_0000081 ;
+  mtg_sc:preferred_name "ADGRG6-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L3-5 SST ADGRG6" ;
+  mtg_sc:tdc_id "Hodge36" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "132"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.66"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_13841 ;
+  obo_sc:expresses hugo:HGNC_9454 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000037 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000037" ;
+  skos:broader :pCL_0000081 ;
+  mtg_sc:preferred_name "EYS-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L2-4 SST FRZB" ;
+  mtg_sc:tdc_id "Hodge37" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:cluster_size "64"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "4"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.52"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_21555 ;
+  obo_sc:expresses hugo:HGNC_18374 ;
+  obo_sc:expresses hugo:HGNC_7872 ;
+  obo_sc:expresses hugo:HGNC_7603 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000038 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000038" ;
+  skos:broader :pCL_0000081 ;
+  mtg_sc:preferred_name "TH-expressing-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L5-6 SST TH" ;
+  mtg_sc:tdc_id "Hodge38" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "27"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.71"^^xsd:double ;
+  obo_sc:expresses "LOC102724957" ;
+  obo_sc:expresses hugo:HGNC_11782 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000039 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000039" ;
+  skos:broader :pCL_0000082 ;
+  mtg_sc:preferred_name "CPED1-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L5-6 LHX6 GLP1R" ;
+  mtg_sc:tdc_id "Hodge39" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer6" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "27"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.75"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_26159 ;
+  obo_sc:expresses hugo:HGNC_10725 ;
+  obo_sc:expresses hugo:HGNC_983 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000040 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000040" ;
+  skos:broader :pCL_0000082 ;
+  mtg_sc:preferred_name "ANKRD34B-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L5-6 PVALB LGR5" ;
+  mtg_sc:tdc_id "Hodge40" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "52"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.56"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_33736 ;
+  obo_sc:expresses "LOC401478" ;
+  obo_sc:expresses hugo:HGNC_26159 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000041 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000041" ;
+  skos:broader :pCL_0000082 ;
+  mtg_sc:preferred_name "SPP1-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L4-5 PVALB MEPE" ;
+  mtg_sc:tdc_id "Hodge41" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "64"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.67"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_11255 ;
+  obo_sc:expresses hugo:HGNC_4893 ;
+  obo_sc:expresses hugo:HGNC_13361 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000042 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000042" ;
+  skos:broader :pCL_0000082 ;
+  mtg_sc:preferred_name "SLC9A9-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L2-4 PVALB WFDC2" ;
+  mtg_sc:tdc_id "Hodge42" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:cluster_size "387"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.79"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_20653 ;
+  obo_sc:expresses hugo:HGNC_11517 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000043 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000043" ;
+  skos:broader :pCL_0000082 ;
+  mtg_sc:preferred_name "SULF1-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L4-6 PVALB SULF1" ;
+  mtg_sc:tdc_id "Hodge43" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "167"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.55"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_20391 ;
+  obo_sc:expresses hugo:HGNC_26159 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000044 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000044" ;
+  skos:broader :pCL_0000082 ;
+  mtg_sc:preferred_name "LYPD6-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L5-6 SST MIR548F2" ;
+  mtg_sc:tdc_id "Hodge44" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "80"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.63"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_28751 ;
+  obo_sc:expresses hugo:HGNC_8614 ;
+  obo_sc:expresses hugo:HGNC_4453 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000045 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000045" ;
+  skos:broader :pCL_0000082 ;
+  mtg_sc:preferred_name "COL15A1-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L2-5 PVALB SCUBE3" ;
+  mtg_sc:tdc_id "Hodge45" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "32"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.82"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_2192 ;
+  obo_sc:expresses "LOC401478" ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000046 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000046" ;
+  skos:broader :pCL_0000091 ;
+  mtg_sc:preferred_name "CBLN2-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L2 LAMP5 LTK" ;
+  mtg_sc:tdc_id "Hodge46" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:cluster_size "812"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.67"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_51166 ;
+  obo_sc:expresses hugo:HGNC_1544 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000047 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000047" ;
+  skos:broader :pCL_0000091 ;
+  mtg_sc:preferred_name "PENK-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L2-4 LINC00507 GLP2R" ;
+  mtg_sc:tdc_id "Hodge47" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:cluster_size "170"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.66"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_8831 ;
+  obo_sc:expresses hugo:HGNC_16709 ;
+  obo_sc:expresses hugo:HGNC_21063 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000048 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000048" ;
+  skos:broader :pCL_0000091 ;
+  mtg_sc:preferred_name "PALMD-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L2-3 LINC00507 FREM3" ;
+  mtg_sc:tdc_id "Hodge48" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:cluster_size "2284"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.77"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_15846 ;
+  obo_sc:expresses hugo:HGNC_19347 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000049 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000049" ;
+  skos:broader :pCL_0000077 ;
+  mtg_sc:preferred_name "PXDN-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L5-6 THEMIS C1QL3" ;
+  mtg_sc:tdc_id "Hodge49" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer6" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "1537"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.79"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_42500 ;
+  obo_sc:expresses hugo:HGNC_14966 ;
+  obo_sc:expresses hugo:HGNC_21569 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000050 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000050" ;
+  skos:broader :pCL_0000093 ;
+  mtg_sc:preferred_name "CCDC68-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L3-4 RORB CARM1P1" ;
+  mtg_sc:tdc_id "Hodge50" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:cluster_size "280"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.68"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_24350 ;
+  obo_sc:expresses hugo:HGNC_23392 ;
+  obo_sc:expresses hugo:HGNC_9477 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000051 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000051" ;
+  skos:broader :pCL_0000093 ;
+  mtg_sc:preferred_name "ANXA1-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L3-5 RORB ESR1" ;
+  mtg_sc:tdc_id "Hodge51" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "1428"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.88"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_533 ;
+  obo_sc:expresses "LOC105371677" ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000052 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000052" ;
+  skos:broader :pCL_0000093 ;
+  mtg_sc:preferred_name "RMST-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L3-5 RORB COL22A1" ;
+  mtg_sc:tdc_id "Hodge52" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "160"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.78"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_29893 ;
+  obo_sc:expresses hugo:HGNC_7154 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000053 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000053" ;
+  skos:broader :pCL_0000093 ;
+  mtg_sc:preferred_name "CUX2|NTNG-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L3-5 RORB FILIP1L" ;
+  mtg_sc:tdc_id "Hodge53" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "153"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "4"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.65"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_19347 ;
+  obo_sc:expresses hugo:HGNC_23319 ;
+  obo_sc:expresses hugo:HGNC_2210 ;
+  obo_sc:expresses "LOC101928196" ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000054 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000054" ;
+  skos:broader :pCL_0000093 ;
+  mtg_sc:preferred_name "TWIST2-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L3-5 RORB TWIST2" ;
+  mtg_sc:tdc_id "Hodge54" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "93"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.27"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_20670 ;
+  obo_sc:expresses "LOC101927281" ;
+  obo_sc:expresses hugo:HGNC_26851 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000055 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000055" ;
+  skos:broader :pCL_0000094 ;
+  mtg_sc:preferred_name "RBM20-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L4-5 RORB FOLH1B" ;
+  mtg_sc:tdc_id "Hodge55" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "870"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.75"^^xsd:double ;
+  obo_sc:expresses "LOC101927835" ;
+  obo_sc:expresses hugo:HGNC_27424 ;
+  obo_sc:expresses hugo:HGNC_7957 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000056 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000056" ;
+  skos:broader :pCL_0000094 ;
+  mtg_sc:preferred_name "RPRM-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L4-6 RORB SEMA3E" ;
+  mtg_sc:tdc_id "Hodge56" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "777"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.76"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_24201 ;
+  obo_sc:expresses "LOC101928622" ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000057 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000057" ;
+  skos:broader :pCL_0000094 ;
+  mtg_sc:preferred_name "BARX2-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L4-5 RORB DAPK2" ;
+  mtg_sc:tdc_id "Hodge57" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "173"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.58"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_49556 ;
+  obo_sc:expresses hugo:HGNC_956 ;
+  obo_sc:expresses "LOC105374971" ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000058 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000058" ;
+  skos:broader :pCL_0000094 ;
+  mtg_sc:preferred_name "TNNT2-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L5-6 RORB TTC12" ;
+  mtg_sc:tdc_id "Hodge58" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "167"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.80"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_11949 ;
+  obo_sc:expresses "LOC105371833" ;
+  obo_sc:expresses hugo:HGNC_4525 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000059 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000059" ;
+  skos:broader :pCL_0000094 ;
+  mtg_sc:preferred_name "ITGA11-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L4-6 RORB C1R" ;
+  mtg_sc:tdc_id "Hodge59" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "160"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.58"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_6136 ;
+  obo_sc:expresses hugo:HGNC_9011 ;
+  obo_sc:expresses hugo:HGNC_29634 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000060 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000060" ;
+  skos:broader :pCL_0000077 ;
+  mtg_sc:preferred_name "LOC105376457-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L4-5 FEZF2 SCN4B" ;
+  mtg_sc:tdc_id "Hodge60" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:cluster_size "25"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.86"^^xsd:double ;
+  obo_sc:expresses "LOC105376457" ;
+  obo_sc:expresses "LOC105378657" ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000061 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000061" ;
+  skos:broader :pCL_0000095 ;
+  mtg_sc:preferred_name "LOC101928196-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L5-6 THEMIS DCSTAMP" ;
+  mtg_sc:tdc_id "Hodge61" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "53"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.78"^^xsd:double ;
+  obo_sc:expresses "LOC101928196" ;
+  obo_sc:expresses "LOC105378486" ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000062 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000062" ;
+  skos:broader :pCL_0000095 ;
+  mtg_sc:preferred_name "OLFML2B-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L5-6 THEMIS CRABP1" ;
+  mtg_sc:tdc_id "Hodge62" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "147"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.84"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_24558 ;
+  obo_sc:expresses hugo:HGNC_11168 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000063 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000063" ;
+  skos:broader :pCL_0000095 ;
+  mtg_sc:preferred_name "GAS2L3-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L5-6 THEMIS FGF10" ;
+  mtg_sc:tdc_id "Hodge63" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "78"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.57"^^xsd:double ;
+  obo_sc:expresses "LOC101928964" ;
+  obo_sc:expresses hugo:HGNC_27475 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000064 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000064" ;
+  skos:broader :pCL_0000077 ;
+  mtg_sc:preferred_name "IL26-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L4-6 FEZF2 IL26" ;
+  mtg_sc:tdc_id "Hodge64" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "344"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.85"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_43910 ;
+  obo_sc:expresses hugo:HGNC_17119 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000065 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000065" ;
+  skos:broader :pCL_0000096 ;
+  mtg_sc:preferred_name "SULF1-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L5-6 FEZF2 ABO" ;
+  mtg_sc:tdc_id "Hodge65" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer6" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "373"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.86"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_20391 ;
+  obo_sc:expresses hugo:HGNC_14632 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000066 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000066" ;
+  skos:broader :pCL_0000096 ;
+  mtg_sc:preferred_name "PIK3C2G-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L6 FEZF2 SCUBE1" ;
+  mtg_sc:tdc_id "Hodge66" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer6" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "52"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.74"^^xsd:double ;
+  obo_sc:expresses "LOC105379054" ;
+  obo_sc:expresses hugo:HGNC_8973 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000067 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000067" ;
+  skos:broader :pCL_0000096 ;
+  mtg_sc:preferred_name "NR4A2-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L5-6 FEZF2 IL15" ;
+  mtg_sc:tdc_id "Hodge67" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer6" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "56"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "3"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.77"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_7981 ;
+  obo_sc:expresses hugo:HGNC_27405 ;
+  obo_sc:expresses hugo:HGNC_3446 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000068 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000068" ;
+  skos:broader :pCL_0000096 ;
+  mtg_sc:preferred_name "SLC15A5-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L6 FEZF2 OR2T8" ;
+  mtg_sc:tdc_id "Hodge68" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer6" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "19"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "4"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.73"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_33455 ;
+  obo_sc:expresses hugo:HGNC_5472 ;
+  obo_sc:expresses hugo:HGNC_23503 ;
+  obo_sc:expresses hugo:HGNC_8739 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000069 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000069" ;
+  skos:broader :pCL_0000096 ;
+  mtg_sc:preferred_name "NPFFR2-expressing cerebral cortex MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L5-6 FEZF2 EFTUD1P1" ;
+  mtg_sc:tdc_id "Hodge69" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer6" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "314"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.81"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_4525 ;
+  obo_sc:expresses "LOC105377183" ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000070 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000070" ;
+  skos:broader :pCL_0000083 ;
+  mtg_sc:preferred_name "PCDH15-expressing MTG Oligodendrocyte precursor cell" ;
+  rdfs:label "OPC L1-6 PDGFRA" ;
+  mtg_sc:tdc_id "Hodge70" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "238"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.88"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_14674 ;
+  obo_sc:expresses hugo:HGNC_8803 ;
+.
+:pCL_0000071 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000071" ;
+  skos:broader :pCL_0000088 ;
+  mtg_sc:preferred_name "SLC1A3-expressing MTG astrocyte" ;
+  rdfs:label "Astro L1-6 FGFR3 SLC14A1" ;
+  mtg_sc:tdc_id "Hodge71" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "230"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.87"^^xsd:double ;
+  obo_sc:expresses "LOC105376917" ;
+  obo_sc:expresses hugo:HGNC_10941 ;
+.
+:pCL_0000072 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000072" ;
+  skos:broader :pCL_0000088 ;
+  mtg_sc:preferred_name "MT1F-expressing MTG astrocyte" ;
+  rdfs:label "Astro L1-2 FGFR3 GFAP" ;
+  mtg_sc:tdc_id "Hodge72" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:cluster_size "61"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.76"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_7398 ;
+  obo_sc:expresses hugo:HGNC_5362 ;
+.
+:pCL_0000073 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000073" ;
+  skos:broader :pCL_0000085 ;
+  mtg_sc:preferred_name "ENPP2-expressing MTG Oligodendrocyte" ;
+  rdfs:label "Oligo L1-6 OPALIN" ;
+  mtg_sc:tdc_id "Hodge73" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "313"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.93"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_3357 ;
+  obo_sc:expresses hugo:HGNC_23723 ;
+.
+:pCL_0000074 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000074" ;
+  skos:broader :pCL_0000086 ;
+  mtg_sc:preferred_name "EMCN-expressing cerebral cortex MTG endothelial cell" ;
+  rdfs:label "Endo L2-6 NOSTRIN" ;
+  mtg_sc:tdc_id "Hodge74" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "9"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "1"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.86"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_16041 ;
+.
+:pCL_0000075 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000075" ;
+  skos:broader :pCL_0000087 ;
+  mtg_sc:preferred_name "CSF1R-expressing MTG Microglial cell" ;
+  rdfs:label "Micro L1-6 TYROBP" ;
+  mtg_sc:tdc_id "Hodge75" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:cluster_size "63"^^xsd:int ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.91"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_2433 ;
+  obo_sc:expresses hugo:HGNC_17379 ;
+.
+:pCL_0000076 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000076" ;
+  skos:broader :pCL_0000089 ;
+  mtg_sc:preferred_name "GAD1-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-6 GAD1 GAD2" ;
+  mtg_sc:tdc_id "Hodge76" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.95"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_4092 ;
+  obo_sc:expresses hugo:HGNC_4093 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000077 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000077" ;
+  skos:broader :pCL_0000090 ;
+  mtg_sc:preferred_name "SLC17A7-expressing MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L1-6 SLC17A7 SATB2" ;
+  mtg_sc:tdc_id "Hodge77" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.99"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_16704 ;
+  obo_sc:expresses hugo:HGNC_21637 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000078 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000078" ;
+  skos:broader :pCL_0000097 ;
+  mtg_sc:preferred_name "FBXL7-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-6 FBXL7 SV2C" ;
+  mtg_sc:tdc_id "Hodge78" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.86"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_13604 ;
+  obo_sc:expresses hugo:HGNC_30670 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000079 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000079" ;
+  skos:broader :pCL_0000076 ;
+  mtg_sc:preferred_name "NXPH1-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-6 NXPH1 PLCH1" ;
+  mtg_sc:tdc_id "Hodge79" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.91"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_20693 ;
+  obo_sc:expresses hugo:HGNC_29185 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000080 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000080" ;
+  skos:broader :pCL_0000097 ;
+  mtg_sc:preferred_name "VIP-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-6 VIP" ;
+  mtg_sc:tdc_id "Hodge80" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "1"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.88"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_12693 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000081 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000081" ;
+  skos:broader :pCL_0000079 ;
+  mtg_sc:preferred_name "SST-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-6 SST SOX6" ;
+  mtg_sc:tdc_id "Hodge81" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.88"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_16421 ;
+  obo_sc:expresses hugo:HGNC_11329 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000082 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000082" ;
+  skos:broader :pCL_0000079 ;
+  mtg_sc:preferred_name "PVALB-expressing cerebral cortex MTG GABAergic interneuron" ;
+  rdfs:label "Inh L1-6 PVALB TAC1" ;
+  mtg_sc:tdc_id "Hodge82" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.82"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_9704 ;
+  obo_sc:expresses hugo:HGNC_11517 ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000083 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000083" ;
+  skos:broader cl:CL_0002453 ;
+  mtg_sc:preferred_name "MTG Oligodendrocyte precursor cell" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+.
+:pCL_0000084 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000084" ;
+  skos:broader cl:CL_0002605 ;
+  mtg_sc:preferred_name "MTG Astrocyte of the cerebral cortex" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+.
+:pCL_0000085 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000085" ;
+  skos:broader cl:CL_0000128 ;
+  mtg_sc:preferred_name "MTG Oligodendrocyte" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+.
+:pCL_0000086 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000086" ;
+  skos:broader cl:CL_1001602 ;
+  mtg_sc:preferred_name "cerebral cortex MTG endothelial cell" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+.
+:pCL_0000087 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000087" ;
+  skos:broader cl:CL_0000129 ;
+  mtg_sc:preferred_name "MTG Microglial cell" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+.
+:pCL_0000088 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000088" ;
+  skos:broader :pCL_0000084 ;
+  mtg_sc:preferred_name "FGFR3-expressing MTG astrocyte" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "1"^^xsd:int ;
+  obo_sc:expresses hugo:HGNC_3690 ;
+.
+:pCL_0000089 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000089" ;
+  skos:broader cl:CL_0010011 ;
+  mtg_sc:preferred_name "cerebral cortex MTG GABAergic interneuron" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:neuron_type "GABAergic" ;
+.
+:pCL_0000090 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000090" ;
+  skos:broader cl:CL_0000679 ;
+  mtg_sc:preferred_name "MTG Glutamatergic neuron" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000091 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000091" ;
+  skos:broader :pCL_0000077 ;
+  mtg_sc:preferred_name "CUX2-expressing MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L1-4 CUX2" ;
+  mtg_sc:tdc_id "Hodge83" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer2|cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.89"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_43558 ;
+  obo_sc:expresses hugo:HGNC_19347 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000092 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000092" ;
+  skos:broader :pCL_0000077 ;
+  mtg_sc:preferred_name "RORB-expressing MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L3-6 RORB" ;
+  mtg_sc:tdc_id "Hodge84" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4|cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "1"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.86"^^xsd:double ;
+  obo_sc:expresses "LOC105374972" ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000093 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000093" ;
+  skos:broader :pCL_0000092 ;
+  mtg_sc:preferred_name "COBLL1-expressing MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L3-5 COBLL1" ;
+  mtg_sc:tdc_id "Hodge85" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.84"^^xsd:double ;
+  obo_sc:expresses "LOC101927281" ;
+  obo_sc:expresses hugo:HGNC_23571 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000094 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000094" ;
+  skos:broader :pCL_0000092 ;
+  mtg_sc:preferred_name "TRABD2A-expressing MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L4-6 TRABD2A" ;
+  mtg_sc:tdc_id "Hodge86" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.81"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_27013 ;
+  obo_sc:expresses "LOC105374971" ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000095 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000095" ;
+  skos:broader :pCL_0000077 ;
+  mtg_sc:preferred_name "OLFML2B-expressing MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L5-6 OLFML2B SMYD1" ;
+  mtg_sc:tdc_id "Hodge87" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.90"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_24558 ;
+  obo_sc:expresses hugo:HGNC_20986 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000096 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000096" ;
+  skos:broader :pCL_0000077 ;
+  mtg_sc:preferred_name "EGFEM1P-expressing MTG Glutamatergic neuron" ;
+  rdfs:label "Exc L5-6 EGFEM1P ADAMTSL1" ;
+  mtg_sc:tdc_id "Hodge88" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:enriched_in "cortical_layer6" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.89"^^xsd:double ;
+  obo_sc:expresses hugo:HGNC_25149 ;
+  obo_sc:expresses hugo:HGNC_14632 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
+:pCL_0000097 
+  a skos:Concept ;
+  obo_sc:id "pCL:0000097" ;
+  skos:broader :pCL_0000076 ;
+  mtg_sc:preferred_name "CXCL14-expressing MTG Glutamatergic neuron" ;
+  rdfs:label "Inh L1-6 CXCL14" ;
+  mtg_sc:tdc_id "Hodge89" ;
+  go_sc:part_of uberon:UBERON_0002771 ;
+  mtg_sc:has_soma_location_in "cortical_layer1" ;
+  mtg_sc:has_soma_location_in "cortical_layer2" ;
+  mtg_sc:has_soma_location_in "cortical_layer3" ;
+  mtg_sc:has_soma_location_in "cortical_layer4" ;
+  mtg_sc:has_soma_location_in "cortical_layer5" ;
+  mtg_sc:has_soma_location_in "cortical_layer6" ;
+  mtg_sc:marker_gene_evidence "2"^^xsd:int ;
+  mtg_sc:f_measure_evidence "0.91"^^xsd:double ;
+  obo_sc:expresses "LOC105375415" ;
+  obo_sc:expresses hugo:HGNC_10640 ;
+  mtg_sc:neuron_type "Glutamatergic" ;
+.
