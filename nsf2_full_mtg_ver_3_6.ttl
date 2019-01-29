@@ -14,7 +14,7 @@
 
 <http://www.jcvi.org/framework/nsf2_full_mtg>
   rdf:type owl:Ontology ;
-  owl:versionInfo "$Id: nsf2_full_mtg_ver_3_6_JCVI.ttl, Ver 1.0, Jan 11, 2019, Mohamed Keshk. $" .
+  owl:versionInfo "$Id: nsf2_full_mtg_ver_3_6.ttl, Ver 1.0, Jan 29, 2019, Mohamed Keshk. $" .
 
 
 # ******************* NSF2_Full_MTG_Ver-3.6_JCVI Concepts ******************* 
